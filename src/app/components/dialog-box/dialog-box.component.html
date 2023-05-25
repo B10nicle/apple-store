@@ -1,0 +1,20 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Price</mat-label>
+    <input matInput formControlName="price">
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Image link</mat-label>
+    <input matInput formControlName="image">
+  </mat-form-field>
+
+  <div class="buttons">
+    <button class="button" mat-flat-button color="primary" type="submit">Add</button>
+    <button class="button" mat-flat-button color="primary" (click)="onNoClick()">Cancel</button>
+  </div>
+
+</form>

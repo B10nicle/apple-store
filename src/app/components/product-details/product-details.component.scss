@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px auto 0;
+}
+
+.card {
+  background-color: #fff;
+  margin-right: 10px;
+}
+
+.button {
+  margin-right: 5px;
+}
+
+.image {
+  max-width: 250px;
+  max-height: 250px;
+}

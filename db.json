@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "Granny Smith",
+      "price": "2",
+      "image": "assets/images/granny-smith.png"
+    },
+    {
+      "id": 2,
+      "title": "Pink Lady",
+      "price": "2.30",
+      "image": "assets/images/pink-lady.png"
+    },
+    {
+      "id": 3,
+      "title": "Honeycrisp",
+      "price": "1.90",
+      "image": "assets/images/honeycrisp.png"
+    },
+    {
+      "id": 4,
+      "title": "Envy",
+      "price": "1.70",
+      "image": "assets/images/envy.png"
+    },
+    {
+      "id": 5,
+      "title": "Fuji",
+      "price": "1.95",
+      "image": "assets/images/fuji.png"
+    },
+    {
+      "id": 6,
+      "title": "Gala",
+      "price": "2.30",
+      "image": "assets/images/gala.png"
+    },
+    {
+      "id": 7,
+      "title": "Golden Delicious",
+      "price": "2.10",
+      "image": "assets/images/golden-delicious.png"
+    },
+    {
+      "id": 8,
+      "title": "Jazz",
+      "price": "1.75",
+      "image": "assets/images/jazz.png"
+    },
+    {
+      "id": 9,
+      "title": "Red Delicious",
+      "price": "1.65",
+      "image": "assets/images/red-delicious.png"
+    },
+    {
+      "title": "Apple",
+      "price": "5",
+      "image": "assets/images/default.png",
+      "id": 10
+    }
+  ]
+}

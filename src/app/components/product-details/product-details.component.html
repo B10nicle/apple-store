@@ -1,0 +1,13 @@
+<div class="container">
+  <mat-card class="card">
+    <mat-card-title>{{product.title}}</mat-card-title>
+    <img class="image" mat-card-image src="{{product.image}}" alt="apples"/>
+    <mat-card-content>
+      <p>{{product.price | currency}}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button class="button" mat-flat-button color="primary">Add</button>
+      <button class="button" mat-flat-button color="primary" [routerLink]="['/product', product.id]">Details</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
