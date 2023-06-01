@@ -1,0 +1,47 @@
+@keyframes fadeInTitle {
+  0% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSubtitle {
+  0% {
+    transform: translateY(70px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.home {
+  background: url("/assets/images/background.jpeg") no-repeat center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  min-height: 84vh;
+  display: flex;
+}
+
+.title {
+  animation: fadeInTitle 1s ease-in-out forwards;
+  font-weight: bold;
+  font-size: 60px;
+  color: #ffffff;
+  opacity: 0;
+}
+
+.subtitle {
+  animation: fadeInSubtitle 1s ease-in-out forwards;
+  animation-delay: 700ms;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 40px;
+  color: #ffffff;
+  opacity: 0;
+}

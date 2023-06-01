@@ -1,12 +1,6 @@
 {
   "products": [
     {
-      "id": 1,
-      "title": "Granny Smith",
-      "price": "2",
-      "image": "assets/images/granny-smith.png"
-    },
-    {
       "id": 2,
       "title": "Pink Lady",
       "price": "2.30",
@@ -17,12 +11,6 @@
       "title": "Honeycrisp",
       "price": "1.90",
       "image": "assets/images/honeycrisp.png"
-    },
-    {
-      "id": 4,
-      "title": "Envy",
-      "price": "1.70",
-      "image": "assets/images/envy.png"
     },
     {
       "id": 5,
@@ -53,12 +41,22 @@
       "title": "Red Delicious",
       "price": "1.65",
       "image": "assets/images/red-delicious.png"
+    }
+  ],
+  "basket": [
+    {
+      "id": 7,
+      "title": "Golden Delicious",
+      "price": "2.10",
+      "image": "assets/images/golden-delicious.png",
+      "quantity": 21
     },
     {
-      "title": "Apple",
-      "price": "5",
-      "image": "assets/images/default.png",
-      "id": 10
+      "id": 3,
+      "title": "Honeycrisp",
+      "price": "1.90",
+      "image": "assets/images/honeycrisp.png",
+      "quantity": 12
     }
   ]
 }

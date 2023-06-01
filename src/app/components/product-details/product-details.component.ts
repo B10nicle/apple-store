@@ -9,11 +9,11 @@ import {Subscription} from "rxjs";
   styleUrls: ['./product-details.component.scss']
 })
 export class ProductDetailsComponent implements OnInit {
-  product: IProducts;
-  productSubscription: Subscription;
-
   constructor(private route: ActivatedRoute) {
   }
+
+  product: IProducts;
+  productSubscription: Subscription;
 
   ngOnInit(): void {
     this.productSubscription = this.route.data.subscribe((data) => {

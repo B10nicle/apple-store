@@ -1,10 +1,10 @@
 .container {
-  display: flex;
+  display: grid;
+  max-width: 1280px;
+  grid-template-columns: repeat(4, 250px);
   justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
-  gap: 20px;
   padding: 20px 0;
+  gap: 20px;
 }
 
 .card {
@@ -15,12 +15,14 @@
 
 .button {
   margin-right: 5px;
+
 }
 
 .image {
   max-width: 250px;
   max-height: 250px;
   object-fit: contain;
+  cursor: pointer;
 }
 
 .title {
@@ -35,6 +37,36 @@
 }
 
 .buttons {
-  gap: 20px;
-  justify-content: center;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.header {
+  max-width: 1600px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+
+  &.button {
+    margin-left: 5px;
+    justify-content: flex-end;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.logo {
+  user-select: none;
+}
+
+.store-icon {
+  margin-right: 5px;
 }

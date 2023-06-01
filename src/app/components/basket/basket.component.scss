@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  background-color: #fff;
+  max-width: 300px;
+  border-radius: 5%;
+}
+
+.button {
+  margin-right: 5px;
+}
+
+.image {
+  max-width: 250px;
+  max-height: 250px;
+  object-fit: contain;
+}
+
+.title {
+  display: flex;
+  font-size: 20px;
+  margin: 10px 15px 5px 10px;
+  justify-content: space-between;
+}
+
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.buttons {
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.amount {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+p {
+  margin: 0;
+}

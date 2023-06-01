@@ -9,7 +9,7 @@ import {FooterComponent} from './components/UI/footer/footer.component';
 import {ProductsComponent} from './components/products/products.component';
 import {BasketComponent} from './components/basket/basket.component';
 import {ProductDetailsComponent} from './components/product-details/product-details.component';
-import {BaseComponent} from './components/base/base.component';
+import {HomeComponent} from './components/home/home.component';
 import {DialogBoxComponent} from './components/dialog-box/dialog-box.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
@@ -18,7 +18,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { FooterForProductsComponent } from './components/UI/footer-for-products/footer-for-products.component';
+import {MatMenuModule} from '@angular/material/menu';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,9 +29,8 @@ import { FooterForProductsComponent } from './components/UI/footer-for-products/
     ProductsComponent,
     BasketComponent,
     ProductDetailsComponent,
-    BaseComponent,
-    DialogBoxComponent,
-    FooterForProductsComponent
+    HomeComponent,
+    DialogBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +44,9 @@ import { FooterForProductsComponent } from './components/UI/footer-for-products/
     MatDialogModule,
     MatInputModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

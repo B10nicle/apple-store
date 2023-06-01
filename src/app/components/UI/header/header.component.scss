@@ -1,4 +1,8 @@
-.example-spacer {
+.header {
+  height: 8vh;
+}
+
+.spacer {
   flex: 1 1 auto;
 }
 
@@ -8,6 +12,7 @@
 
   &.button {
     margin-left: 5px;
+    justify-content: flex-end;
 
     &:first-child {
       margin-left: 0;
@@ -15,8 +20,7 @@
   }
 }
 
-.no-select {
-  cursor: pointer;
+.logo {
   user-select: none;
 }
 
