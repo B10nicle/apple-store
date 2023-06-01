@@ -1,11 +1,30 @@
-<mat-toolbar class="header" color="primary">
+<mat-toolbar class="header">
   <div class="toolbar logo">
-    <mat-icon class="store-icon">storefront</mat-icon>
-    <span>Apple Store</span>
+    <img class="store-icon" src="./assets/images/icon.png" alt="logo"/>
+    <span class="name">Apple Store</span>
   </div>
   <span class="spacer"></span>
-  <div class="toolbar no-select">
-    <button class="toolbar button" mat-flat-button routerLink="">Main</button>
+
+  <button class="menu-burger" mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon class="menu-burger">menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="">
+      <mat-icon>home</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-menu-item routerLink="products">
+      <mat-icon>apps</mat-icon>
+      <span>Products</span>
+    </button>
+    <button mat-menu-item routerLink="basket">
+      <mat-icon>shopping_cart</mat-icon>
+      <span>Basket</span>
+    </button>
+  </mat-menu>
+
+  <div class="menu-normal toolbar no-select">
+    <button class="toolbar button" mat-flat-button routerLink="">Home</button>
     <button class="toolbar button" mat-flat-button routerLink="products">Products</button>
     <button class="toolbar button" mat-flat-button routerLink="basket">
       <mat-icon>shopping_cart</mat-icon>

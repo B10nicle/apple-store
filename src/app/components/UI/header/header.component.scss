@@ -26,4 +26,28 @@
 
 .store-icon {
   margin-right: 5px;
+  width: 24px;
 }
+
+.menu-burger {
+  display: none;
+}
+
+@media (max-width: 570px) {
+  .menu-burger {
+    display: flex;
+  }
+  .menu-normal {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .store-icon {
+    display: none;
+  }
+  .name {
+    display: none;
+  }
+}
+

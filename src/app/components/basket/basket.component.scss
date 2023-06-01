@@ -4,12 +4,14 @@
   flex-wrap: wrap;
   margin: auto;
   gap: 20px;
+  min-height: 84vh;
   padding: 20px 0;
 }
 
 .card {
   background-color: #fff;
   max-width: 300px;
+  max-height: 360px;
   border-radius: 5%;
 }
 
