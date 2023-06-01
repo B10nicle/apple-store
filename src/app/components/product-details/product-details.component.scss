@@ -1,15 +1,16 @@
 .container {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: flex-start;
-  margin: 10px auto 0;
-  flex: 1 0 auto;
+  align-content: center;
+  justify-content: center;
+  min-height: 84vh;
+  gap: 20px;
 }
 
 .card {
-  background-color: #fff;
-  margin-right: 10px;
+  background-color: rgba(0, 0, 0, 0.9);
+  max-width: 300px;
+  border-radius: 5%;
+  max-height: 350px;
 }
 
 .button {

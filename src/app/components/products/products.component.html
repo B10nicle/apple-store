@@ -6,12 +6,9 @@
       <p>{{product.price | currency}}</p>
     </div>
     <mat-card-actions class="buttons">
-      <button class="button" mat-flat-button (click)="addToBasket(product)" type="button">Add</button>
-      <button class="button" mat-flat-button  [matMenuTriggerFor]="menu">Edit</button>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="deleteItem(product.id)">Delete</button>
-        <button mat-menu-item (click)="openDialog(product)">Edit</button>
-      </mat-menu>
+      <button class="button" mat-flat-button (click)="deleteItem(product.id)">Delete</button>
+      <button class="button" mat-flat-button (click)="openDialog(product)">Edit</button>
+      <button class="button" mat-flat-button (click)="addToBasket(product)">Add</button>
     </mat-card-actions>
   </mat-card>
 </div>
