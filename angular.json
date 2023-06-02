@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "online-shop-angular": {
+    "apple-store-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/online-shop-angular",
+            "outputPath": "dist/apple-store-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -40,8 +40,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "5mb",
+                  "maximumError": "10mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -66,10 +66,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "online-shop-angular:build:production"
+              "browserTarget": "apple-store-angular:build:production"
             },
             "development": {
-              "browserTarget": "online-shop-angular:build:development"
+              "browserTarget": "apple-store-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -77,7 +77,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "online-shop-angular:build"
+            "browserTarget": "apple-store-angular:build"
           }
         },
         "test": {

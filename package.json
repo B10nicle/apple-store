@@ -1,13 +1,16 @@
 {
-  "name": "online-shop-angular",
-  "version": "0.0.0",
+  "name": "apple-store-angular",
+  "version": "1.0.0",
+  "license": "Apache-2.0 license",
   "scripts": {
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "server": "json-server --watch db.json",
-    "test": "ng test"
+    "test": "ng test",
+    "build-gh": "ng build --base-href \"https://b10nicle.github.io/apple-store-angular/\"",
+    "deploy": "npx angular-cli-ghpages --dir=dist/apple-store-angular"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +38,7 @@
     "@angular/compiler-cli": "^15.1.0",
     "@angular/localize": "^15.1.0",
     "@types/jasmine": "~4.3.0",
+    "angular-cli-ghpages": "^1.0.6",
     "jasmine-core": "~4.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
