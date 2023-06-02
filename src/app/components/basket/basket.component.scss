@@ -1,18 +1,17 @@
 .container {
-  display: flex;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(4, 250px);
   justify-content: center;
-  flex-wrap: wrap;
-  margin: auto;
-  gap: 20px;
   min-height: 84vh;
-  padding: 20px 0;
+  gap: 20px;
 }
 
 .card {
-  background-color: #fff;
+  background-color: rgba(0, 0, 0, 0.9);
   max-width: 300px;
-  max-height: 360px;
   border-radius: 5%;
+  max-height: 400px;
 }
 
 .button {
@@ -26,6 +25,7 @@
 }
 
 .title {
+  color: white;
   display: flex;
   font-size: 20px;
   margin: 10px 15px 5px 10px;
@@ -36,22 +36,18 @@
   flex: 1 1 auto;
 }
 
-.buttons {
-  flex-direction: row-reverse;
-  justify-content: end;
-}
 
 .row {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  height: 50px;
 }
 
 .amount {
+  color: white;
   font-size: 20px;
   margin-left: 10px;
 }
 
-p {
-  margin: 0;
-}
+
