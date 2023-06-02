@@ -11,19 +11,19 @@ import {DialogBoxComponent} from "../dialog-box/dialog-box.component";
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit, OnDestroy {
-  constructor(private productsService: ProductsService, public dialog: MatDialog) {
-  }
-
   products: IProducts[];
   productsSubscription: Subscription;
   basket: IProducts[];
   basketSubscription: Subscription;
   canEdit: boolean;
 
+  constructor(private productsService: ProductsService,
+              public dialog: MatDialog) {
+  }
+
   ngOnInit(): void {
     this.canEdit = false;
     this.productsSubscription = this.productsService.getProducts().subscribe(data => this.products = data);
-
     this.basketSubscription = this.productsService.getProductFromBasket().subscribe(data => this.basket = data)
   }
 

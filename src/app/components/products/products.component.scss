@@ -3,6 +3,8 @@
   align-content: center;
   grid-template-columns: repeat(4, 250px);
   justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   min-height: 84vh;
   gap: 20px;
 }
@@ -18,7 +20,6 @@
   max-width: 250px;
   max-height: 250px;
   object-fit: contain;
-  cursor: pointer;
 }
 
 .title {
@@ -35,12 +36,10 @@
   justify-content: space-between;
 }
 
-.logo {
-  user-select: none;
-}
-
 @media (max-width: 1280px) {
   .container {
+    margin-top: 20px;
+    margin-bottom: 20px;
     grid-template-columns: repeat(3, 250px);
   }
 }

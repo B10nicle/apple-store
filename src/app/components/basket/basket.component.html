@@ -1,20 +1,16 @@
 <div class="container">
   <mat-card class="card" *ngFor="let product of basket">
     <img class="image" mat-card-image src="{{product.image}}" alt="apples"/>
-    <div class="title">
-      <p>{{product.title}}</p>
-      <p>{{product.price * product.quantity | currency}}</p>
-    </div>
-    <div class="row">
-      <mat-card-actions class="buttons">
-        <div class="amount">Amount: {{product.quantity}}</div>
-        <button class="button" color="primary" mat-mini-fab (click)="removeItem(product)">
-          <mat-icon>remove</mat-icon>
-        </button>
-        <button class="button" color="primary" mat-mini-fab (click)="addItem(product)">
-          <mat-icon>add</mat-icon>
-        </button>
-      </mat-card-actions>
+    <p class="info">{{product.title}}</p>
+    <p class="info">Price {{product.price * product.quantity | currency}}</p>
+    <p class="info">Amount: {{product.quantity}}</p>
+    <div class="buttons">
+      <button class="button" color="primary" mat-mini-fab (click)="removeItem(product)">
+        <mat-icon>remove</mat-icon>
+      </button>
+      <button class="button" color="primary" mat-mini-fab (click)="addItem(product)">
+        <mat-icon>add</mat-icon>
+      </button>
     </div>
   </mat-card>
 </div>

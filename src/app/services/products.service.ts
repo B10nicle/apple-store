@@ -8,6 +8,7 @@ import {IProducts} from "../models/products";
 export class ProductsService {
   url: string = "http://localhost:3000/products";
   urlBasket: string = "http://localhost:3000/basket";
+  productsShown: boolean = false;
 
   constructor(private http: HttpClient) {
   }

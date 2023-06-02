@@ -43,28 +43,28 @@
       "title": "Golden Delicious",
       "price": "2.10",
       "image": "assets/images/golden-delicious.png",
-      "quantity": 21
+      "quantity": 16
     },
     {
       "id": 3,
       "title": "Honeycrisp",
       "price": "1.90",
       "image": "assets/images/honeycrisp.png",
-      "quantity": 12
-    },
-    {
-      "id": 8,
-      "title": "Jazz",
-      "price": "1.75",
-      "image": "assets/images/jazz.png",
-      "quantity": 1
+      "quantity": 16
     },
     {
       "id": 2,
       "title": "Pink Lady",
       "price": "2.30",
       "image": "assets/images/pink-lady.png",
-      "quantity": 1
+      "quantity": 4
+    },
+    {
+      "id": 5,
+      "title": "Fuji",
+      "price": "1.95",
+      "image": "assets/images/fuji.png",
+      "quantity": 6
     }
   ]
 }

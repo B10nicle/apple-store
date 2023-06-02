@@ -8,7 +8,6 @@ import {HeaderComponent} from './components/UI/header/header.component';
 import {FooterComponent} from './components/UI/footer/footer.component';
 import {ProductsComponent} from './components/products/products.component';
 import {BasketComponent} from './components/basket/basket.component';
-import {ProductDetailsComponent} from './components/product-details/product-details.component';
 import {HomeComponent} from './components/home/home.component';
 import {DialogBoxComponent} from './components/dialog-box/dialog-box.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -19,7 +18,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatMenuModule} from '@angular/material/menu';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -28,7 +27,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FooterComponent,
     ProductsComponent,
     BasketComponent,
-    ProductDetailsComponent,
     HomeComponent,
     DialogBoxComponent
   ],
